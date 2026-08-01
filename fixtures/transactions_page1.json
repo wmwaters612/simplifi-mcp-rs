@@ -1,0 +1,46 @@
+{
+  "metaData": {
+    "asOf": "2026-07-30T12:00:00Z",
+    "currentPage": 1,
+    "limit": 2,
+    "pageSize": 2,
+    "totalPages": 2,
+    "totalSize": 3,
+    "nextLink": "/transactions?limit=2&currentPage=2"
+  },
+  "resources": [
+    {
+      "id": "txn-1",
+      "clientId": "c-1",
+      "accountId": "acc-1",
+      "postedOn": "2026-07-01",
+      "payee": "STARBUCKS #123",
+      "renamedPayee": "Starbucks",
+      "memo": "latte",
+      "coa": { "type": "CATEGORY", "id": "cat-7" },
+      "amount": -12.34,
+      "state": "CLEARED",
+      "matchState": "NOT_MATCHED",
+      "source": "FDS",
+      "type": "CASH_FLOW",
+      "isDeleted": false,
+      "mlInferredPayee": "Starbucks",
+      "cpData": { "raw": "STARBUCKS STORE 123" },
+      "dbVersion": 4
+    },
+    {
+      "id": "txn-2",
+      "clientId": "c-2",
+      "accountId": "acc-1",
+      "postedOn": "2026-07-02",
+      "payee": "SAFEWAY 0451",
+      "coa": { "type": "UNCATEGORIZED", "id": "0" },
+      "amount": -45.67,
+      "state": "PENDING",
+      "matchState": "NOT_MATCHED",
+      "source": "FDS",
+      "type": "CASH_FLOW",
+      "isDeleted": false
+    }
+  ]
+}

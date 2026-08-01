@@ -1,0 +1,61 @@
+[package]
+name = "simplifi-mcp"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Unofficial Rust client library + MCP server for Quicken Simplifi's internal web API. Not affiliated with Quicken."
+repository = ""
+publish = false
+
+[lib]
+name = "simplifi_mcp"
+path = "src/lib.rs"
+
+[[bin]]
+name = "simplifi-mcp"
+path = "src/main.rs"
+
+[features]
+default = []
+# Recorded-fixture transport: lets tests and demos run with zero live credentials.
+mock = []
+# Streamable-HTTP MCP transport with mandatory bearer auth (loopback-only by default).
+# Off by default: stdio is the supported single-user transport (SA-10).
+http = [
+    "dep:axum",
+    "dep:sha2",
+    "dep:subtle",
+    "rmcp/transport-streamable-http-server",
+    "tokio/net",
+    "tokio/signal",
+]
+
+[dependencies]
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "sync", "time", "fs"] }
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rust_decimal = "1"
+thiserror = "2"
+secrecy = "0.10"
+chacha20poly1305 = "0.10"
+rand = "0.8"
+base64 = "0.22"
+uuid = { version = "1", features = ["v4"] }
+chrono = "0.4"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+clap = { version = "4", features = ["derive"] }
+dirs = "6"
+url = "2"
+# Official MCP Rust SDK (modelcontextprotocol/rust-sdk). Default features = server+macros+base64.
+rmcp = { version = "3.1", features = ["transport-io"] }
+schemars = "1"
+csv = "1"
+# --- `http` feature only ---
+axum = { version = "0.8", optional = true, default-features = false, features = ["http1", "tokio"] }
+sha2 = { version = "0.10", optional = true }
+subtle = { version = "2", optional = true }
+
+[dev-dependencies]
+tempfile = "3"

@@ -1,0 +1,8 @@
+{
+  "accessToken": "mock-access-token-1",
+  "accessTokenExpired": "2099-01-01T00:00:00.000Z",
+  "refreshToken": "mock-refresh-token-1",
+  "refreshTokenExpired": "2099-06-01T00:00:00.000Z",
+  "token_type": "bearer",
+  "scope": "read write"
+}

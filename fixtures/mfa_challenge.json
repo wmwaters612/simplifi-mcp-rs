@@ -1,0 +1,5 @@
+{
+  "mfaId": "mfa-abc-123",
+  "mfaChannel": "EMAIL",
+  "email": "m***@example.com"
+}

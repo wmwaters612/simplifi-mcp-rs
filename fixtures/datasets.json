@@ -1,0 +1,6 @@
+{
+  "metaData": { "limit": 100, "totalSize": 1 },
+  "resources": [
+    { "id": 123456789012345678, "name": "My Finances", "createdAt": "2023-01-01T00:00:00Z" }
+  ]
+}

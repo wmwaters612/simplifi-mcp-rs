@@ -1,0 +1,8 @@
+{
+  "metaData": { "limit": 5000, "totalSize": 3 },
+  "resources": [
+    { "id": "cat-1", "name": "Paycheck", "categoryType": "INCOME", "usageType": "USER" },
+    { "id": "cat-7", "name": "Coffee Shops", "categoryType": "EXPENSE", "usageType": "USER", "parentId": "cat-6" },
+    { "id": "cat-9", "name": "Groceries", "categoryType": "EXPENSE", "usageType": "USER" }
+  ]
+}

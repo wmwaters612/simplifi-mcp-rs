@@ -1,0 +1,7 @@
+{
+  "metaData": { "limit": 5000, "totalSize": 2 },
+  "resources": [
+    { "id": "tag-1", "name": "vacation", "type": "USER", "numberOfUses": 12 },
+    { "id": "tag-2", "name": "reimbursable", "type": "USER", "numberOfUses": 3 }
+  ]
+}

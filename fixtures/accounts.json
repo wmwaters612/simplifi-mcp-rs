@@ -1,0 +1,7 @@
+{
+  "metaData": { "limit": 1000, "totalSize": 2 },
+  "resources": [
+    { "id": "acc-1", "name": "Checking", "type": "BANK", "currentBalance": 1234.56 },
+    { "id": "acc-2", "name": "Savings", "type": "BANK", "currentBalance": 9999.01 }
+  ]
+}

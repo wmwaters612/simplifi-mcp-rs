@@ -1,0 +1,26 @@
+{
+  "metaData": {
+    "asOf": "2026-07-30T12:00:00Z",
+    "currentPage": 2,
+    "limit": 2,
+    "pageSize": 1,
+    "totalPages": 2,
+    "totalSize": 3
+  },
+  "resources": [
+    {
+      "id": "txn-3",
+      "clientId": "c-3",
+      "accountId": "acc-2",
+      "postedOn": "2026-07-03",
+      "payee": "PAYROLL ACME LLC",
+      "coa": { "type": "CATEGORY", "id": "cat-1" },
+      "amount": 1234.56,
+      "state": "CLEARED",
+      "matchState": "NOT_MATCHED",
+      "source": "FDS",
+      "type": "CASH_FLOW",
+      "isDeleted": false
+    }
+  ]
+}

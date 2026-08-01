@@ -1,0 +1,16 @@
+# build artifacts
+/target
+
+# secrets & local env — never commit (use .env.example as the template)
+.env
+.env.*
+!.env.example
+
+# encrypted token cache & scratch (should never be in-repo anyway; belt and braces)
+*.enc
+*.enc.tmp
+tokens.enc
+audit.jsonl
+
+# editor/OS noise
+.DS_Store
