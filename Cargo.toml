@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 license = "MIT"
 description = "Unofficial Rust client library + MCP server for Quicken Simplifi's internal web API. Not affiliated with Quicken."
-repository = ""
+repository = "https://github.com/mklcapital/simplifi-mcp-rs"
 publish = false
 
 [lib]
