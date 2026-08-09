@@ -46,7 +46,9 @@ See [SECURITY.md](SECURITY.md) for the full threat model and mitigation table.
 ```sh
 cargo build --release                 # stdio MCP server + CLI
 ./target/release/simplifi-mcp login   # one-time interactive login (MFA-aware)
+op run --env-file=.env -- .\target\release\simplifi-mcp.exe login #run with 1password on Windows
 ./target/release/simplifi-mcp serve   # MCP server on stdio
+op run --env-file=.env -- .\target\release\simplifi-mcp.exe serve #run with 1password on Windows
 ```
 
 ### Credentials via 1Password (recommended)
@@ -70,7 +72,7 @@ Claude Desktop / Claude Code MCP entry:
   "mcpServers": {
     "simplifi": {
       "command": "op",
-      "args": ["run", "--env-file=/path/to/.env", "--", "/path/to/simplifi-mcp", "serve"]
+      "args": ["run", "--env-file=C:/Users/WilliamWaters/source/repos/simplifi-mcp-rs/.env", "--", "C:/Users/WilliamWaters/source/repos/simplifi-mcp-rs/target/release/simplifi-mcp", "serve"]
     }
   }
 }
